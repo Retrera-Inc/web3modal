@@ -55,25 +55,25 @@ export class W3mConnectView extends LitElement {
   // -- Private ------------------------------------------- //
   private walletConnectConnectorTemplate() {
     return null
-    if (CoreHelperUtil.isMobile()) {
-      return null
-    }
+    // if (CoreHelperUtil.isMobile()) {
+    //   return null
+    // }
 
-    const connector = this.connectors.find(c => c.type === 'WALLET_CONNECT')
-    if (!connector) {
-      return null
-    }
+    // const connector = this.connectors.find(c => c.type === 'WALLET_CONNECT')
+    // if (!connector) {
+    //   return null
+    // }
 
-    return html`
-      <wui-list-wallet
-        imageSrc=${ifDefined(AssetUtil.getConnectorImage(connector))}
-        name=${connector.name ?? 'Unknown'}
-        @click=${() => this.onConnector(connector)}
-        tagLabel="qr code"
-        tagVariant="main"
-      >
-      </wui-list-wallet>
-    `
+    // return html`
+    //   <wui-list-wallet
+    //     imageSrc=${ifDefined(AssetUtil.getConnectorImage(connector))}
+    //     name=${connector.name ?? 'Unknown'}
+    //     @click=${() => this.onConnector(connector)}
+    //     tagLabel="qr code"
+    //     tagVariant="main"
+    //   >
+    //   </wui-list-wallet>
+    // `
   }
 
   private customTemplate() {
