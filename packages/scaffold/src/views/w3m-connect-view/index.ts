@@ -54,6 +54,7 @@ export class W3mConnectView extends LitElement {
 
   // -- Private ------------------------------------------- //
   private walletConnectConnectorTemplate() {
+    return null
     if (CoreHelperUtil.isMobile()) {
       return null
     }
